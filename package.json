@@ -1,7 +1,7 @@
 {
     "scripts": {
         "dev": "next",
-        "build": "npm install && next build",
+        "build": "npm run postinstall && next build && next export",
         "start": "next start",
         "postinstall": "npm run getcontent",
         "getcontent": "babel-node helpers/getcontent.js install"
